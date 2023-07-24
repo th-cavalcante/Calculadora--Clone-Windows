@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,400&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <div id="container-btn-open-calculator">
+        <button id="btn-OpenCalculator" onclick="openCalculator()">Abrir Calculadora</button>
+    </div>
+
+    <div id="container-main">
+        <div id="header-caluladora">
+            <div id="container-icones-header">
+                <div id="box-logo-header-calculator">
+                    <span class="material-symbols-outlined" id="icone-calculator">calculate</span>
+                    <p> Calculadora</p>
+                </div>
+
+                <div id="icones-header-left">
+                    <p>-</p>
+                    <p>[]</p>
+                    <button id="btnClosed" onclick="closedCalculator()">X</button>
+                </div>
+
+            </div>
+            <div id="container-icones-header2">
+                <div id="icones-header2">
+                    <p>=</p>
+                    <p>Padrão</p>
+                    <p>[]</p>
+                </div>
+                <p>(  )</p>
+
+            </div>
+        </div>
+
+        <div id="display">
+            <p id="input-display"></p>
+
+        </div>
+
+        <div id="container-btn-header">
+            <button >MC</button>
+            <button >MR</button>
+            <button class="btn-header-cor" >M+</button>
+            <button class="btn-header-cor">M-</button>
+            <button class="btn-header-cor">MS</button>
+            <button >M</button>
+        </div>
+
+        <div id="btns-calculadora">
+           
+                <button onclick="porcentagem()">%</button>
+                <button onclick="clean()">CE</button>
+                <button onclick="clean()">C</button>
+                <button onclick="back()"><</button>
+            
+                <button>1/x</button>
+                <button>X²</button>
+                <button>²/x</button>
+                <button onclick="insert('/')">/</button>
+           
+                <button onclick="insert('7')">7</button>
+                <button onclick="insert('8')">8</button>
+                <button onclick="insert('9')">9</button>
+                <button onclick="insert('*')">x</button>
+            
+            
+                <button onclick="insert('4')">4</button>
+                <button onclick="insert('5')">5</button>
+                <button onclick="insert('6')">6</button>
+                <button onclick="insert('-')">-</button>
+           
+            
+                <button onclick="insert('1')">1</button>
+                <button onclick="insert('2')">2</button>
+                <button onclick="insert('3')">3</button>
+                <button onclick="insert('+')">+</button>
+            
+                <button>+/-</button>
+                <button onclick="insert('0')">0</button>
+                <button>,</button>
+                <button id="btn-igual" onclick="calcular()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

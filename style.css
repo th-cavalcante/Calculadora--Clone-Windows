@@ -1,0 +1,158 @@
+body{
+    background-color: rgb(19, 16, 16);
+    font-family: 'roboto';
+}
+
+#container-main{
+    background-color: rgb(238, 239, 240);
+    height: 542px;
+    width: 326px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+#header-caluladora{
+    background-color: none;
+    max-width: 100%;
+    height: 100px;
+}
+#container-icones-header{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+#icones-header{
+    background-color: none;
+    max-width: 100%;
+    height: 50px;
+}
+#icones-header-left{
+    display: flex;  
+    align-items: center;
+}
+#icones-header-left p{
+    margin: 15px;
+}
+#icones-header-left, button{
+    margin-right: 5px;
+}
+#btnClosed{
+    height: 30px;
+    width: 25px;
+    background-color: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+}
+#box-logo-header-calculator{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+#box-logo-header-calculator p{
+    font-size: 12px;
+}
+#icone-calculator{
+    color:rgb(25, 92, 155);
+    font-size: 20px;
+}
+
+
+#container-icones-header2{
+    background-color: none;
+    max-width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#icones-header2{
+    display: flex;
+    font-family: 'roboto';
+ 
+}
+#icones-header2 p{
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 600;
+    
+}
+#display{
+    max-width: 100%;
+    height: 40px;
+    background-color: none;
+    text-align: right;
+    align-items: center;
+    font-size: 45px;
+    
+}
+#input-display {
+    margin-right: 10px;
+  
+}
+
+#container-btn-header{
+    max-width: 100%;
+    height: 40px;
+    background-color: none;
+    margin-left: 2px;
+}
+#container-btn-header button{
+    height: 38px;
+    width: 52px;
+    font-size: 14px;
+    background: none;
+    border: none;
+    color: rgb(148, 142, 142);
+    box-shadow: none;
+}
+#container-btn-header .btn-header-cor{
+    color: rgb(19, 17, 17);
+}
+#btns-calculadora{   
+    margin-left: 5px;
+    margin-right: 5px;   
+}
+ button{
+    width: 78px ;
+    height: 51px;
+    background-color: none;
+    border: 0.7px solid rgb(209, 202, 202);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px  rgb(202, 199, 199);
+    color: rgb(37, 34, 34);
+    font-size: 18px;
+    margin: -1px;
+    margin-top: 2px;
+    font-family: 'roboto';
+}
+button:hover{
+    background-color: rgb(229, 229, 231);
+    
+
+}
+#btn-igual{
+    background-color: rgb(25, 92, 155);
+    color: #fff;
+    font-family: 'montserrat';
+
+}
+
+
+
+#container-btn-open-calculator{
+    text-align: left;
+
+}
+
+#btn-OpenCalculator{
+    width: 300px;
+    cursor: pointer;
+    
+
+}
